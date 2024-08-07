@@ -1,0 +1,27 @@
+RabbitMQ kullanım alanlar;
+
+1. Yayınlama
+
+RabbitMQ ile aynı mesajın birden fazla kullanıcıya iletilmesi ile gerçek zamanlı bildirim sisteminde kullanılabilir.
+    Örneğin:
+        - Bir haber sitesinin, yeni bir yayım yayınladığında, kullanıcılara bildirilmesi.
+
+
+
+2. İstek/Cevap
+
+RabbitMQ, istekte bulunan ve ona yanıt veren sistemler arasında mesaj alışverişini yönetebilmektedir. 
+    Örneğin:
+        - Ödeme işemi esnasında ödeme doğrulama isteği ve yanıtı için RabbitMQ sistemi kullanılabilir.
+        - Böylelikle sistemlerin ikisi de RabbitMQ üzerinden haberleşir.
+        - İstek ve Cevap RabbitMQ üzerinden sağlanır.
+
+
+
+3. Dağıtık İşlemler
+
+RabbitMQ, birden fazla işlem gerektiren durumlarda dağıtık işlemler yapılmasını sağlayabilir.
+Kullanıcının çok fazla dosya yüklediği durumlarda tercih edilebilir.
+    Örneğin:
+        - Resim kayıt sisteminde kullanıcı birden fazla dosya eklediğinde RabbitMQ kuyruğa alır.
+        - Birden fazla görüntü servis çalıştırarak kuyruktaki görevleri paralel olarak çalıştırır.
