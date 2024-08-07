@@ -1,0 +1,31 @@
+Redis kullanım alanlar;
+
+1. Önbellekleme
+
+Redis, veri kaynağına yapılan sorgulamaları hızlandırmak ve veri kaynağındaki trafiği azaltmak için kullanılabilir.
+Bu durum performans artışı ve düşük gecikme sağlayacaktır.
+    Örneğin:
+        - Bir e-ticaret sitesinde ürün detaylarının gösterildiği sayfa, her görüntüleme için yeniden sorgu göndermesi 
+        hem maaliyetli hemde zaman alacak bir durumdur.
+        - Bu maaliyetin ve zaman kaynın önüne geçmek için Redis tercih edilebilir.
+
+
+
+2. Gerçek Zamanlı Analiz
+
+Yüksek hızda veri yazma ve okuma özellikleri ile gerçek zamanlı analizler gerçekleştirilebilir.
+Kullanıcı etkileşimleri ya da IoT cihazların anlık izlenmesi için tercih edilebilir.
+Redis Streams ile gerçek zamanlı bildirim ya da canlı analiz/izleme için kullanılabilir.
+    Örneğin:
+        - Bir spor müsabakasında canlı skor, oyuncu istatistikleri gibi veriler izlenebilir.
+        - Canlı karşılaşma sırasında önemli olaylar Redis ile kayıt altına alınabilir.
+
+
+
+3. Arka Plan Görevleri
+
+Arka planda çalışacak olan uzun süreli işlemlerde tercih edilebilir. 
+Resim işleme, email gönderimi, veri işleme/dönüşüm işlemlerinde tercih edilebilir.
+    Örneğin:
+        - Kullanıcı oluşturma esnasında, doğrulama mail gönderim sistemi Redis ile yönetilebilir.
+        - Arka planda çalışan bu sistem görevi aldığında email gönderimini gerçekleştirir.
